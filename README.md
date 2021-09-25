@@ -1,5 +1,5 @@
-bbb-dl
-======
+BBB-Downloader
+==============
 
 Download all files for Big Blue Button meetings
 
@@ -10,23 +10,26 @@ Download all files for Big Blue Button meetings
 
 <!-- toc -->
 * [Usage](#usage)
-* [Commands](#commands)
 <!-- tocstop -->
-# Usage
-<!-- usage -->
-```sh-session
-$ npm install -g bbb-dl
-$ bbb-dl COMMAND
-running command...
-$ bbb-dl (-v|--version|version)
-bbb-dl/1.0.2 win32-x64 node-v14.17.6
-$ bbb-dl --help [COMMAND]
-USAGE
-  $ bbb-dl COMMAND
-...
-```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
 
-<!-- commandsstop -->
+# Usage
+
+```sh-session
+Install:
+$ npm install -g bbb-dl
+or:
+$ npx bbb-dl [...]
+
+Download meeting:
+$ bbb-dl https://example.com/playback/presentation/2.3/123nb123jd901k2e2nc8j21k-12312322
+
+Specify output dir:
+$ bbb-dl https://example.com/playback/presentation/2.3/123nb123jd901k2e2nc8j21k-12312322 -d OutputDir
+
+Help:
+$ bbb-dl -h
+
+Version:
+$ bbb-dl -v
+```
+
