@@ -28,4 +28,3 @@ $ bbb-dl -h
 Version:
 $ bbb-dl -v
 ```
-
