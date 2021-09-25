@@ -3,7 +3,8 @@
 BBB-Downloader
 ==============
 
-Download all files for Big Blue Button meetings 
+Super simple downloader for Big Blue Button Meetings.  
+Downloads all files and creates a simple [MLT file](https://www.mltframework.org/docs/mltxml/), which can be imported into [Shotcut](https://shotcut.org). 
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/bbb-dl.svg)](https://npmjs.org/package/bbb-dl)
@@ -31,9 +32,9 @@ Version:
 $ bbb-dl -v
 ```
 
-## Exporting to single video
+## Exporting to a single video file
 
 In the download folder you'll find a file ending with `.mlt`.  
-This is an [MLT Multimedia Framework XML file](https://www.mltframework.org/) which can be imported to [Shotcut](https://shotcut.org).  
-Just open Shotcut, press "Open File", and double click on the `.mlt` file. 
+This is an [Media Lovin' Toolkit XML file](https://www.mltframework.org/docs/mltxml/) which can be imported to [Shotcut](https://shotcut.org).  
+Just open Shotcut, press "Open File", and double click on the `.mlt` file.  
 Now you can export the whole meeting with slides, audio and desktop share as a single video file.

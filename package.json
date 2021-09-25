@@ -1,6 +1,6 @@
 {
   "name": "bbb-dl",
-  "description": "Download all files for Big Blue Button meetings",
+  "description": "Super simple downloader for Big Blue Button Meetings",
   "version": "1.0.4",
   "author": "Skayo (https://skayo.dev)",
   "bin": {
