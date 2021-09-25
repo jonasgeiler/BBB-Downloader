@@ -19,7 +19,7 @@ $ npm install -g bbb-dl
 $ bbb-dl COMMAND
 running command...
 $ bbb-dl (-v|--version|version)
-bbb-dl/1.0.1 win32-x64 node-v14.17.6
+bbb-dl/1.0.2 win32-x64 node-v14.17.6
 $ bbb-dl --help [COMMAND]
 USAGE
   $ bbb-dl COMMAND
