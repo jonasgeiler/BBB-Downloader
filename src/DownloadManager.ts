@@ -1,4 +1,4 @@
-import { Presets, SingleBar } from 'cli-progress';
+import { cli } from 'cli-ux';
 import { DownloaderHelper as Downloader, DownloaderHelperOptions as DownloaderOptions } from 'node-downloader-helper';
 import { basename } from 'path';
 
@@ -51,12 +51,14 @@ export class DownloadManager {
 		}
 
 		const downloader = new Downloader(url, this.downloadFolder, downloaderOptions);
-		const progress = new SingleBar({
-			format:         '{bar} {percentage}% (ETA: {eta_formatted}) | {name}',
-			hideCursor:     true,
-			stopOnComplete: true,
-			autopadding:    true,
-		}, Presets.shades_classic);
+		const progress = cli.progress({
+			format:            ' {bar} {percentage}% | ETA: {eta}s | {name}',
+			barCompleteChar:   '\u25A0',
+			barIncompleteChar: '\u25A1',
+			hideCursor:        true,
+			stopOnComplete:    true,
+			autopadding:       true,
+		});
 
 		progress.start(100, 0, {
 			...downloader.getStats(),
@@ -72,6 +74,7 @@ export class DownloadManager {
 		});
 
 		downloader.on('end', () => {
+			progress.update(100);
 			progress.stop();
 		});
 
