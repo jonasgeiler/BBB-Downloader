@@ -1,15 +1,12 @@
-import { MultiBar, Presets, SingleBar } from 'cli-progress';
+import { Presets, SingleBar } from 'cli-progress';
 import { DownloaderHelper as Downloader, DownloaderHelperOptions as DownloaderOptions } from 'node-downloader-helper';
 import { basename } from 'path';
 
 export class DownloadManager {
 
 	protected downloadFolder: string;
-	protected maxConcurrentDownloads: number;
 	protected fileConflictMode: DownloadManager.FileConflictMode;
 	protected onError: DownloadManager.ErrorHandler;
-
-	protected multiBar: MultiBar;
 
 	constructor(options: DownloadManager.Options) {
 		this.downloadFolder = options.downloadFolder ?? process.cwd();

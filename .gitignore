@@ -5,5 +5,7 @@
 /lib
 /tmp
 /yarn.lock
+/pnpm-lock.yaml
+/package-lock.json
 node_modules
 .idea
