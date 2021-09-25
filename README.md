@@ -8,10 +8,6 @@ Download all files for Big Blue Button meetings
 [![Downloads/week](https://img.shields.io/npm/dw/bbb-dl.svg)](https://npmjs.org/package/bbb-dl)
 [![License](https://img.shields.io/npm/l/bbb-dl.svg)](https://github.com/Skayo/BBB-Downloader/blob/master/package.json)
 
-<!-- toc -->
-* [Usage](#usage)
-<!-- tocstop -->
-
 # Usage
 
 ```sh-session
