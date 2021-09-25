@@ -1,0 +1,56 @@
+{
+  "name": "bbb-dl",
+  "description": "Download all files for Big Blue Button meetings",
+  "version": "1.0.0",
+  "author": "Skayo (https://skayo.dev)",
+  "bin": {
+    "bbb-dl": "./bin/run"
+  },
+  "bugs": "https://github.com/Skayo/BBB-Downloader/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/errors": "^1.3.5",
+    "@oclif/plugin-help": "^3.2.3",
+    "cli-progress": "^3.9.1",
+    "cli-ux": "^5.6.3",
+    "fast-xml-parser": "^3.20.0",
+    "fs-extra": "^10.0.0",
+    "he": "^1.2.0",
+    "node-downloader-helper": "^1.0.18",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "@types/cli-progress": "^3.9.2",
+    "@types/fs-extra": "^9.0.12",
+    "@types/he": "^1.1.2",
+    "@types/node": "^10.17.60",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/dist"
+  ],
+  "homepage": "https://github.com/Skayo/BBB-Downloader",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "oclif": {
+    "bin": "bbb-dl"
+  },
+  "repository": "Skayo/BBB-Downloader",
+  "scripts": {
+    "prepack": "rimraf dist && tsc -b && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "dist/index.d.ts"
+}
